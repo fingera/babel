@@ -44,7 +44,9 @@ export default class File {
     this.code = code;
     this.ast = ast;
     this.inputMap = inputMap;
+  }
 
+  invalidCache() {
     this.path = NodePath.get({
       hub: this.hub,
       parentPath: null,
